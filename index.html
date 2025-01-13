@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,38 @@
 </head>
 <body>
     <header class="header">
+        <nav class="header__nav">
+            <ul class="menu menu--principal">
+                <li class="menu__item">
+                    <a class="menu__link active" href="#home">
+                        <span class="menu__text">Home</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#projetos">
+                        <span class="menu__text">Projetos</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#sobre">
+                        <span class="menu__text">Sobre</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#contato">
+                        <span class="menu__text">Contato</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <div class="header__brand">
             <img class="brand__logo" src="assets/images/logo.png" alt="Logo Dylan">
         </div>
-        <i id="toggleTheme" class="bi bi-sun"></i>    
+        <div class="header__toggle">
+            <i id="toggleTheme" class="bi bi-sun"></i>  
+        </div>  
     </header>
-    <nav>
+    <nav class="nav--mobile">
         <ul class="menu menu--mobile">
             <li class="menu__item">
                 <a class="menu__link active" href="#home">
@@ -45,5 +71,52 @@
             </li>
         </ul>
     </nav>
+    <main>
+        <div class="main__content1">
+            <h1><p>Tecnologia &</p> Desenvolvimento Criativo Front-end</h1>
+            <p>Dylan Pereira Barbosa, Florianópolis SC, desenvolvedor e estudante Front-end.</p>
+            <ul class="menu menu--social">
+                <li>
+                    <a class="menu__link" href="">
+                    <i class="menu__icon bi bi-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu__link" href="">
+                    <i class="menu__icon bi bi-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu__link" href="">
+                    <i class="menu__icon bi bi-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <button class="btn btn--primary">
+                <span>Ver projetos</span>
+                <i class="bi bi-arrow-down-right"></i>
+            </button>
+        </div>
+        <div class="main__content2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/W_H7_tDHFE8?si=OQ2e0vL8hvUNBxt5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>    
+    </main>
+    <section class="skills">
+        <h2>Principais Tecnologias do Mercado</h2>
+        <ul class="skills__list">
+            <li class="skills__item">
+                <img class="skills__logo" src="assets/images/icone-html-grise.png" alt="html logo">
+            </li>
+            <li class="skills__item">
+                <img class="skills__logo" src="assets/images/CSS3_icon-icons.webp" alt="html css">
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <p>
+            @ 2025. Todos os Direitos Reservados. Dylan Pereira Barbosa. Desenvolvido por <a href="https://github.com/PBDylan">EA</a>
+        </p>
+    </footer>
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>
